@@ -1,0 +1,280 @@
+body{
+    overflow-x: hidden;
+    background-color: #F3FAE0;
+    background-size: cover;
+  }
+
+  .agrotóxico-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+
+  header{
+    display: flex;
+    width: 93%;
+    height: 90px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #C6DF82;
+    z-index: 100;
+  }
+
+  header .logo-header{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .topicos-header{
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+
+  .link-header {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: inherit; 
+}
+
+.link-header:hover {
+  transform: scale(1.02); 
+  color: #B96034;
+}
+
+
+  h1.pagina-atual{
+    color: #B96034;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
+
+  .sobre{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+    font-size: 15px;
+    padding-bottom: 2px;
+    background-color: #B96034;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bolder;
+  }
+
+  .link-header, .sobre, .button {
+    text-decoration: none; /* Retira o sublinhado dos links */
+}
+
+  .sobre:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 7px #b4b2b2, 
+    -1px -1px  7px #b4b2b2; 
+    cursor: pointer; 
+
+  }
+
+
+  
+
+
+  form footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-color: #B96034;
+    color: #fff;
+    text-align: justify;
+    position: absolute;
+    bottom: -9400px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  
+  footer .logo-rodapé{
+    width: 40px;
+  }
+  
+  footer p{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 50%;
+    position: relative;
+    left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+  }
+  
+  .direita{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 50%;
+    position:relative;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 250px;
+  }
+  
+  .direita .logo{
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .titulo{
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    background-size: cover;
+  }
+  
+
+  .titulo p{
+    font-size: 90px;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;  
+    left: 0;
+    animation: bounceInUp;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+  
+  }
+
+  .titulo h1{
+    font-size: 90px;
+    font-weight: bolder;
+    color: #B96034;
+    animation: bounceInDown;
+    animation-duration: 3s;  
+    animation-timing-function: ease-in-out;
+
+  }
+
+  .conheça{
+    position: absolute;
+    bottom: 100px;
+    right: -40px;
+  }
+
+
+  .mais{
+    position: absolute;
+    bottom: 100px;
+    left: 850px;
+  }
+
+
+  .os{
+    position: absolute;
+    bottom: 0;
+  }
+
+  
+  .agrotóxicos{
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+  }
+
+  .todos-os-agrotóxicos{
+    background-color: transparent;
+    position: relative;
+    left: 100px;
+    top: 4800px;
+  }
+
+  .juntos{
+    width: 40%;
+    margin: 30px;
+    background-color: transparent;
+
+  }
+
+  .juntos h2{
+    width: 15%;
+    font-size: 40px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: #B96034;
+    border: 3px solid #a8c065;
+    box-shadow: 1px 1px  7px #727171, -1px -1px  7px #727171;  
+    color: #fff;
+  }
+
+  .juntos h3{
+    width: 65%;
+    margin-left: 70px;
+    font-size: 40px;
+    color: #000;
+    position: relative;
+    bottom: 60px;
+  }
+
+  .juntos h4{
+    display: flex;
+    width: 100%;
+    font-size: 17px;
+    padding: 40px;
+    text-align: justify;
+    position: relative;
+    bottom: 30px;
+    left: 0;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #B96034;
+    border: 15px solid #a8c065;
+    color: #fff;
+    box-shadow: 3px 3px 15px #727171, 
+    -3px -3px  15px #727171,
+    inset 1px 1px  7px #727171,
+    inset -1px -1px  7px #727171; 
+  }
+
+  .juntos.esquerda{
+    position: relative;
+    left: 500px;
+  }
+
+
+  .qrcode{
+    width: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+  }
+  
+  
+
+
+
+  
+  
+
+
