@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECOA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  body {
+    overflow-x: hidden;
+    background-color: #f3fae0;
+  }
+
+  .titulo {
+    font-family: 'Chau Philomene One';
+  }
+
+  header {
+    display: flex;
+    width: 93%;
+    height: 90px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #C6DF82;
+  }
+
+  header .logo-header {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .topicos-header {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+
+  .topicos-header h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 15px;
+  }
+
+  h1.pagina-atual {
+    color: #B96034;
+  }
+
+
+
+  h1.sobre {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #B96034;
+    color: #fff;
+    border-radius: 20px;
+  }
+
+  h1.sobre:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 7px #b4b2b2,
+      -1px -1px 7px #b4b2b2;
+    cursor: pointer;
+
+  }
+
+
+  .home-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    height: 100vh;
+    justify-content: center;
+  }
+
+
+  button {
+    color: #fff;
+    font-weight: bold;
+    background-color: #99D1E6;
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    animation-timing-function: ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 7px #b4b2b2,
+      -1px -1px 7px #b4b2b2;
+  }
+
+  form footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-color: #B96034;
+    color: #fff;
+    text-align: justify;
+    position: absolute;
+    bottom: -4500px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  footer .logo-rodapé {
+    width: 40px;
+  }
+
+  footer p {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 50%;
+    position: relative;
+    left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+
+  .direita {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 50%;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 250px;
+  }
+
+  .direita .logo {
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+</style>
+
+</head>
+
+<body>
+  <form>
+    <div class="mx-5" style="border-bottom: 3px solid #c6df82;" data-aos="zoom-out-up" data-aos-duration="1800">
+      <nav class="navbar navbar-expand-lg fw-bold" style="background-color: #f3fae0;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/logo - ECOA.png" width="52" height="60" alt="">
+          </a>
+
+          <!-- toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active me-4 px-4 " aria-current="page"
+                  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4 px-4" href="" style="color: #B96034;">Agro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4 px-4 " aria-current="page"
+                  href="agrotoxicos.html">Agrotóxicos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4 px-4 " href="jogo-da-memoria/jogo.html">Jogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active me-4 px-4 text-white"
+                  style="border: 1px solid #b96034; border-radius: 40px; background-color: #b96034;" href="index.html">Sobre
+                  nós</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--Infomação que transofma-->
+    <div class="m-3 p-3">.</div>
+    <div class="row gx-3 gy-4 p-5">
+      <div class="col-12 col-lg-6 p-3">
+        <div class="text-center p-3">
+          <h3 style="font-size: 6em;" class="titulo"> <span style="color: #b96034;">INFORMAÇÃO</span> que</h3>
+          <h1 style="font-size: 8em; color:#b96034;" class="titulo">TRANSFORMA:</h1>
+          <p class="mx-5">
+            Veja aqui atitudes que você pode ter, ou compreender melhor sobre a utilização dos agrotóxicos no meio
+            ambiente. É muito importante saber, entender e divulgar esse conteúdo, uma vez que esses compostos químicos
+            são inseridos nos alimentos que consumimos, podendo muitas vezes no prejudicar, e não somente, afetar toda a
+            estrutura ecológica em que os agrotóxicos forem inseridos.
+          </p>
+          <img src="img-agro/MAO2.png" alt="" class="d-lg-flex d-none img-fluid"
+            style="width: 35%; z-index: 1; position: absolute; left: 0px;">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 offset-lg-1">
+        <div class="p-3 mb-4 rounded" style="background-color: #f3fae0; border: 3px solid #99d1e6;" data-aos="fade-left"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <h5 class="fw-bold">
+            O que são agrotoxicos
+          </h5>
+          <p>
+            De acordo com o INCA (Instituto Nacional do Câncer), os agrotóxicos são produtos químicos sintéticos usados
+            para matar insetos, larvas, fungos, carrapatos sob a justificativa de controlar as doenças provocadas por
+            esses vetores e de regular o crescimento da vegetação, tanto no ambiente rural quanto urbano.
+        </div>
+        <div class="p-3 mb-4 rounded" style="background-color: #f3fae0; border: 3px solid #99d1e6;"
+          data-aos="fade-left">
+          <h5 class="fw-bold">
+            Qual a função deles numa plantação
+          </h5>
+          <p>
+            Agrotóxicos são produtos químicos sintéticos usados em seres ou plantas que podem prejudicar a plantação,
+            sob a justificativa de controlar as doenças provocadas por esses vetores e de regular o crescimento da
+            vegetação, tanto no ambiente rural quanto urbano. Sendo assim, ao aplicar os agrotóxicos na lavoura, o
+            produtor rural ajuda a proteger as plantações contra o ataque de pragas. Isso porque o uso dos agroquímicos
+            visa atingir o alvo biológico, seja ele inseto, ácaro, planta daninha, fungos, bactérias ou outro ser
+            vivo.Como resultado, os agrotóxicos evitam perdas nas culturas e garantem que as plantações se desenvolvam
+            sem a interferência de pragas e doenças, promovendo assim o aumento da produção e a lucratividade do negócio
+            rural.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Agrotoxicos mais utilizados-->
+    </div>
+    <div class="my-5 py-5 ">
+      <div class="m-5">
+        <div class="d-flex justify-content-center">
+          <h1 class="p-5 text-end fw-semibold m-0" style="font-size: 2.5em; z-index: 1;">
+            Quais são os mais utilizados pelas pequenas e pelas grandes empresas?
+          </h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center" style="font-size: 1.2em;" data-aos="fade-up">
+        <div class="col-lg-3 col-md-0 p-5 me-3 rounded"
+          style="background-color: #f3fae0; border: 3px solid #99d1e6; z-index: 1;">
+          <p>Glifosato trata-se de um princípio ativo, isto é, uma molécula desenvolvida na fabricação de produtos
+            químicos. Inicialmente, o glifosato surgiu na indústria farmacêutica e também chegou a ser usado para limpar
+            metais. Porém, se popularizou nos herbicidas da Monsanto, que hoje pertence à Bayer. O herbicida à base de
+            glifosato é aplicado nas folhas de plantas daninhas, aquelas que nascem espontaneamente no meio das lavouras
+            e prejudicam a produção agrícola. Ele bloqueia a capacidade da planta de absorver alguns nutrientes. </p>
+        </div>
+        <div class="col-lg-3 col-md-0 p-5 me-3 rounded"
+          style="background-color: #f3fae0; border: 3px solid #99d1e6; z-index: 1;" data-aos="fade-up">
+          <p>O 2,4-D é um herbicida, ou seja, um produto químico utilizado para eliminar plantas indesejadas em cultivos
+            agrícolas. Trata-se de um dos herbicidas mais utilizados no mundo, sendo o segundo ingrediente ativo mais
+            comercializado no Brasil conforme o Painel de informações de agrotóxicos do IBAMA, representando
+            aproximadamente 8% dos ingredientes ativos usados em 2022. O 2,4-D faz parte do grupo dos "Herbicidas
+            reguladores de crescimento (auxínicos)". Nas plantas, as auxinas são hormônios que atuam no crescimento,
+            formação e elongação celular, controle do crescimento lateral etc. </p>
+        </div>
+        <div class="col-lg-3 col-md-0 p-5 me-3 rounded"
+          style="background-color: #f3fae0; border: 3px solid #99d1e6; z-index: 1;" data-aos="fade-up">
+          <p>Mancozeb é um fungicida de amplo espectro, pertencente ao grupo dos alquilenobis(ditiocarbamatos),
+            utilizado para controlar diversas doenças fúngicas e ácaros em diversas culturas agrícolas. É conhecido por
+            sua ação preventiva, atuando por contato e exercendo efeito multissítio sobre os fungos. Mancozeb age como
+            um inibidor enzimático inespecífico, interferindo em vários processos metabólicos do fungo e desorganizando
+            funções celulares.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--Perigo do agrotoxico-->
+    <div class="row">
+      <div class="col-lg col-md-12">
+        <p class="display-5 fw-bold m-5">Mas afinal, esses agrotóxicos são <span class="display-1 titulo"
+            style="color:#b96034;">PREJUDICIAIS</span> ou não?</p>
+        <div data-aos="fade-right">
+          <p class="rounded p-5 m-5" style="background-color: #f3fae0; border: 3px solid #99d1e6;">Apesar de garantir
+            uma boa produção agrícola, o uso de agrotóxicos está associado a inúmeros problemas. A Organização das
+            Nações Unidas (ONU) divulgou em 2017 um relatório que estima a morte de cerca de 200 mil pessoas anualmente
+            por ingestão e envenenamento por agrotóxicos.
+            No Brasil, entre os anos de 2007 e 2015, aproximadamente 84,2 mil pessoas intoxicaram-se em decorrência da
+            exposição aos defensivos agrícolas. Pesquisas realizadas pela Associação Brasileira de Saúde Coletiva
+            (Abrasco) e pelo Ministério da Saúde fazem relação entre inúmeros problemas de saúde e o uso de agrotóxicos,
+            como infertilidade, aborto, mal de Parkinson, câncer de vários tipos e distúrbios de comportamento.
+            Outro problema associado aos agrotóxicos são casos de suicídios. Em reportagem recente divulgada pelo UOL,
+            de 2007 a 2018, apenas no Brasil,
+            cerca de 12 mil pessoas tentaram suicídio por meio do uso de agrotóxicos. A maioria das tentativas ocorreu
+            no estado do Paraná, São Paulo e Pernambuco. Essa quantidade de suicídios com defensivos agrícolas é oito
+            vezes maior do que a tentativa com uso de drogas ilícitas ou lícitas.</p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img-agro/MAO.png" alt="" class="d-lg-flex d-none img-fluid w-100">
+      </div>
+    </div>
+
+
+
+    <div>
+      <div class="row justify-content-center p-5 my-3">
+        <div class="col-3 border rounded border-3 p-4 m-5 fw-bold border-black"
+          style="font-size: 1em; border: 3px solid #99d1e6;">Quais são os efeitos que os agrotóxicos mais utilizados
+          causam no solo, na vegetação e para os insetos que se alimentam desses vegetais?</div>
+        <div class="col-6" style="font-size: 1.2em;" data-aos="fade-right">Como explicado, os agrotóxicos são produtos
+          que evitam a proliferação de pragas nas plantações, e isso traz muitas desvantagens aos animais e ambiente que
+          as circulam. A princípio, o uso de agrotóxicos tem um grande potencial de contaminar o solo e as águas
+          subterrâneas. Isso acontece por meio de ventos e chuvas, que facilitam o escoamento do agroquímico. Além
+          disso, a ação dos agrotóxicos é bioacumulativa — ou seja, se um animal morrer contaminado, o outro que se
+          alimentar dele também será contaminado. Na prática, isso ocorre porque o composto permanece no corpo do animal
+          mesmo depois da sua morte, o que torna o alcance da contaminação ainda maior.</div>
+      </div>
+    </div>
+    <div style="background-color: #b96034;" class="text-white">
+      <div>
+        <div class="row p-5 justify-content-center">
+          <div class="col-6" style="font-size: 1.2em;" data-aos="fade-left">Não existem agrotóxicos propriamente ditos
+            que sejam considerados sustentáveis, uma vez que, por definição, são produtos químicos que visam controlar
+            pragas e doenças em culturas agrícolas, e seu uso, por vezes, causa impactos negativos no meio ambiente e na
+            saúde. No entanto, é possível usar agrotóxicos de forma mais sustentável, seguindo as recomendações dos
+            rótulos e utilizando métodos de controle de pragas que minimizem os impactos ambientais. </div>
+          <div class="col-3 border rounded border-3 border-white p-3 m-5 fw-bold" style="font-size: 1em;">Certo. Mas
+            existem outras propostas de agrotóxicos que são sustentáveis e não prejudicam o meio ambiente? </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container text-center">
+        <div class="fw-bold py-5" style="font-size: 2em;">
+          <p>3 maneiras alternativas de utilizar agrotóxicos que
+            <span style="color: #c6df82;">não tenham</span> grandes impactos negativos.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center" style="font-size: 1.2em;">
+        <div class="col-lg-3 col-md-0 p-5 me-3 rounded" style="background-color: #f3fae0; border: 3px solid #99d1e6;"
+          data-aos="flip-left">
+          <h4>Controle Biológico</h4>
+          <p>O controle biológico é uma das melhores alternativas à utilização de agrotóxicos na agricultura por ser um
+            meio totalmente natural. A técnica introduz predadores, parasitas e patógenos das principais pragas
+            presentes nas plantações. Assim, os organismos vivos inseridos no local de cultivo atacam os outros que
+            estejam causando danos econômicos às lavouras. Sua principal vantagem é que não causa danos à lavoura ou aos
+            inimigos naturais do alvo do controle. </p>
+        </div>
+        <div class="col-lg-3 col-md-0 p-5 me-3 rounded" style="background-color: #f3fae0; border: 3px solid #99d1e6;"
+          data-aos="flip-left">
+          <h4>Agroecologia</h4>
+          <p>A agroecologia é o estudo da agricultura por uma perspectiva ecológica, social, política, cultural,
+            ambiental, energética e ética. A prática visa criar um sistema de plantio sustentável que não aplica
+            transgênicos, fertilizantes industriais e agrotóxicos nas lavouras. Seu objetivo é propor uma agricultura
+            ambientalmente sustentável que seja economicamente eficiente e socialmente justa. O método mistura espécies
+            e adubos naturais para manter os solos férteis em longo prazo. </p>
+        </div>
+        <div class="col-lg-3 col-md-0 p-5 me-3 rounded" style="background-color: #f3fae0; border: 3px solid #99d1e6;"
+          data-aos="flip-left">
+          <h4>Manejo de Pragas</h4>
+          <p>O Manejo Integrado de Pragas, também conhecido como MIP, consiste em um conjunto de práticas sustentáveis
+            para controlar as pragas nas lavouras. Por exemplo, os mecanismos mais utilizados são a rotação de cultura,
+            o tratamento de sementes e o monitoramento das pragas, doenças e inimigos naturais. O controle biológico,
+            citado anteriormente, também faz parte das táticas assertivas.</p>
+        </div>
+      </div>
+
+      <!--Jogo1-->
+      <div class="">
+        <div class="row p-5 justify-content-center">
+          <div class="col-12 col-lg-5 m-5 d-flex justify-content-center">
+            <img src="imagens/qr-code.png" alt="" style="height: 70%;"
+              class="d-lg-flex d-none img-fluid">
+          </div>
+          <div class="col-12 col-lg-6 py-5 mx-md-auto" data-aos="fade-right">
+            <p class="fw-semibold" style="font-size:2em;">
+              Agora que você já explorou nossos conteúdos e aprendeu mais sobre os agrotóxicos, seus impactos e
+              alternativas sustentáveis, que tal colocar seus conhecimentos à prova?
+            </p>
+            <p style="font-size: 1.6em;">
+              Preparamos um jogo da memória leve, divertido e educativo, onde você poderá testar o que aprendeu enquanto
+              se diverte. É uma forma descontraída de reforçar o que viu por aqui e, quem sabe, descobrir ainda mais.
+              Vamos jogar?
+            </p>
+            <a href="jogo-da-memoria/jogo.html"><button data-aos="fade-right"
+                data-aos-duration="1800">Acessar jogo</button></a>
+          </div>
+        </div>
+      </div>
+      <footer data-aos="flip-right" data-aos-duration="1800">
+        <p>
+          <img src="jogo-da-memoria/css/fontes/fundos/logo-ECOA-branco.png" class="logo-rodapé">
+          Nós somos o ECOA, um projeto independente que apoia pequenos produtores e promove práticas agrícolas
+          conscientes. Estamos aqui para informar, inspirar e cultivar um futuro mais sustentável!
+        </p>
+
+        <p class="direita">
+          Nossos dados:
+          <br>
+          <br>
+          <img src="imagens/instagram.png" class="logo instagram">
+          <img src="imagens/twiter.png" class="logo twiter">
+        </p>
+      </footer>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
